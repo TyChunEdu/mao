@@ -29,7 +29,7 @@ nav {
 }
 
 section a {
-    color: #767676 ;
+    color: #767676;
 }
 
 a:hover {
@@ -63,6 +63,10 @@ h2 {
 h3 {
     margin-block-start: 1.5em;
     font-family: 'Style Script', cursive;
+}
+
+:target {
+    scroll-margin-top: 92px;
 }
 
 .small-button {
