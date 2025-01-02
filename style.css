@@ -114,6 +114,12 @@ h3 {
     background-color: #008080;
 }
 
+.gom-color {
+    color: #000000;
+    border-color: #000000;
+    background-color: #74ee15;
+}
+
 a button:hover {
     color: #888888 !important;
     border-color: #888888 !important;
