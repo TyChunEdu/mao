@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="style.css" rel="stylesheet"/>
+    <title>The Game of Mao - Home</title>
+</head>
+<body>
+<nav>
+    <a class="logo" href="about.html" target="">
+        Mao
+    </a>
+    <ul>
+        <li>
+            <a href="rules.html">
+                Rules
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Rule Sets
+            </a>
+        </li>
+        <li>
+            <a href="updates.html">
+                Updates
+            </a>
+        </li>
+        <li>
+            <a href="">
+                Council
+            </a>
+        </li>
+        <li>
+            <a href="">
+                More
+            </a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <h1>Clarifications & Changes</h1>
+    <div class="updates">
+        <ol class="updates-list" type="I">
+            <li>
+                <div>
+                    <ul class="horizontal">
+                        <li><h2><u>The Impact</u></h2></li>
+                        <li><h3>T.C.</h3></li>
+                        <li><a class="button-anchor">
+                            <button class="small-button update" type="submit">11 Jul. 2024
+                            </button>
+                        </a></li>
+                    </ul>
+                    <i><b></b></i>
+                    <ul style="list-style-type: disc;">
+                        <li>Added <b><a class="hover-text link-custom"
+                                        data-hover-text="Custom Rule E"
+                                        data-original-text="Are You Lost?"
+                                        href="">Are You Lost?</a></b>.
+                        </li>
+                        <li>Added Uno Rules I and Uno Rules II
+                        </li>
+                        <li>Changed identifiers for custom rules (letters instead of numbers).
+                        </li>
+                        <li>Amended <b><a class="hover-text link-basic"
+                                          data-hover-text="Mao Rule 7"
+                                          data-original-text="No Peeking!"
+                                          href="">No Peeking!</a></b> to require all players to have the backs of their cards visible.
+                        </li>
+                        <li>
+                            Clarified the wording of the penalty for breaking other rules in addition to <b><a class="hover-text link-basic"
+                                                                                                               data-hover-text="Mao Rule 5"
+                                                                                                               data-original-text="Winning the Game"
+                                                                                                               href="">Winning the Game</a></b>.
+                        </li>
+                        <li>
+                            Clarified <b><a class="hover-text link-basic"
+                                            data-hover-text="Mao Rule 20"
+                                            data-original-text="two-it-ing"
+                                            href="">two-it-ing</a></b> in turn.
+                        </li>
+                        <li>
+                            Clarified <b><a class="hover-text link-basic"
+                                            data-hover-text="Mao Rule 21"
+                                            data-original-text="Accumulation Sensation"
+                                            href="">Accumulation Sensation</a></b> for one specific instance.
+                        </li>
+                        <li>
+                            Minor grammatical fixes.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <ul class="horizontal">
+                        <li><h2><u>The New</u></h2></li>
+                        <li><h3>T.C.</h3></li>
+                        <li><a class="button-anchor">
+                            <button class="small-button update" type="submit">1 Jan. 2025
+                            </button>
+                        </a></li>
+                    </ul>
+                    <i><b></b></i>
+                    <ul style="list-style-type: disc;">
+                        <li>Clarified a case for <b><a class="hover-text link-basic"
+                                                       data-hover-text="Mao Rule 15"
+                                                       data-original-text="Joke’s On You!"
+                                                       href="">Joke’s On You!</a></b> where the first card turned over at the start of a round is a Joker.
+                        </li>
+                        <li>Changed <b><a class="hover-text link-custom"
+                                  data-hover-text="Custom Rule D"
+                                  data-original-text="Spicy!"
+                                  href="">Spicy!</a></b>’s wording.
+                        </li>
+                        <li>Added Custom Rules by <b><a class="hover-text link-custom"
+                                                        data-hover-text="Custom Rule F"
+                                                        data-original-text="Meow!"
+                                                        href="">Meow!</a></b> & <b><a class="hover-text link-custom"
+                                                                                      data-hover-text="Custom Rule G"
+                                                                                      data-original-text="Pleasantly Forgetful"
+                                                                                      href="">Pleasantly Forgetful</a></b>.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+<script>
+    // Select all elements with the class 'hover-text'
+    const hoverLinks = document.querySelectorAll('.hover-text');
+
+    // Add event listeners to each element
+    hoverLinks.forEach(link => {
+        const originalText = link.getAttribute('data-original-text');
+        const hoverText = link.getAttribute('data-hover-text');
+        let timeoutId;
+
+        link.addEventListener('mouseover', function () {
+            clearTimeout(timeoutId);
+            this.textContent = hoverText;       // Change text on hover
+        });
+
+        link.addEventListener('mouseout', function () {
+            timeoutId = setTimeout(() => {
+                this.textContent = originalText;
+            }, 500);
+        });
+    });
+</script>
+</body>
+</html>
