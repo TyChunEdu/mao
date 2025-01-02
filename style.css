@@ -352,6 +352,9 @@ ul.horizontal {
 
 ul.horizontal li {
     margin-right: 30px;
+}
+
+.checkboxes ul.horizontal li {
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
