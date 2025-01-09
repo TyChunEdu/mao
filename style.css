@@ -124,6 +124,12 @@ h3 {
     background-color: #74ee15;
 }
 
+.update {
+    color: #000000;
+    border-color: #000000;
+    background-color: #fff;
+}
+
 a button:hover {
     color: #888888 !important;
     border-color: #888888 !important;
